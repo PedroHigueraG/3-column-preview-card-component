@@ -1,0 +1,106 @@
+/* Variables */
+:root{
+    /* Primary */
+    --brigth-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+    /* Neutral */
+    --transparent-white : hsla(0, 0%, 100%, 0.75);
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+/* Content */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 62.5%;
+}
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: var(--very-light-gray);
+    margin: 2rem 0;
+}
+body{
+    font-size: 1.5rem;
+}
+main{
+    min-height: 100vh;
+    background-color: var(--very-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.container p{
+    color: var(--transparent-white);
+}
+.column{
+    padding: 3rem;
+}
+.sedan{
+    background-color: var(--brigth-orange);
+}
+.suv{
+    background-color: var(--dark-cyan);
+}
+.luxury{
+    background-color: var(--very-dark-cyan);
+}
+.button{
+    background-color: var(--very-light-gray);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button:hover{
+    border: 0.1rem solid var(--very-light-gray);
+    background: none;
+    color: var(--very-light-gray);
+    transition: 0.3s;
+}
+.orange{
+    color: var(--brigth-orange);
+}
+.green{
+    color: var(--dark-cyan);
+}
+.cyan{
+    color: var(--very-dark-cyan);
+}
+.attribution a{
+    color: black;
+    font-weight: bold;
+}
+/* Responsive */
+@media screen and (min-width:426px) {
+    .container{
+        margin: 3rem;
+    }
+}
+@media screen and (min-width: 769px) {
+    .container{
+        flex-direction: row;
+        max-width: 80rem;
+    }
+    .button{
+        margin-top: 8rem;
+    }
+    .column{
+        padding-bottom: 4rem;
+    }
+}
