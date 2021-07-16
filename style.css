@@ -56,9 +56,9 @@ main{
 .luxury{
     background-color: var(--very-dark-cyan);
 }
-.button{
+button{
     background-color: var(--very-light-gray);
-    border: none;
+    border: 0.1rem solid transparent;
     padding: 1rem 2rem;
     border-radius: 3rem;
     font-family: 'Lexend Deca', sans-serif;
@@ -67,7 +67,7 @@ main{
     cursor: pointer;
     transition: 0.3s;
 }
-.button:hover{
+button:hover{
     border: 0.1rem solid var(--very-light-gray);
     background: none;
     color: var(--very-light-gray);
