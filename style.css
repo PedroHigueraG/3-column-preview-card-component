@@ -82,6 +82,10 @@ main{
 .cyan{
     color: var(--very-dark-cyan);
 }
+.attribution{
+    text-align: center;
+    margin: 1.5rem;
+}
 .attribution a{
     color: black;
     font-weight: bold;
@@ -90,6 +94,9 @@ main{
 @media screen and (min-width:426px) {
     .container{
         margin: 3rem;
+    }
+    .attribution{
+        margin: 1.5rem 3rem;
     }
 }
 @media screen and (min-width: 769px) {
@@ -103,4 +110,5 @@ main{
     .column{
         padding-bottom: 4rem;
     }
+
 }
